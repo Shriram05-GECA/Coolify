@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallpaper Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Wallpaper Store</h1>
+    <nav>
+      <ul>
+        <li><a href="#nature">Nature</a></li>
+        <li><a href="#abstract">Abstract</a></li>
+        <li><a href="#cities">Cities</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="nature">
+    <h2>Nature Wallpapers</h2>
+    <div class="wallpaper-grid">
+      <div class="wallpaper-item">
+        <img src="images/nature1.jpg" alt="Nature Wallpaper 1" onclick="openPreview(this)">
+      </div>
+      <div class="wallpaper-item">
+        <img src="images/nature2.jpg" alt="Nature Wallpaper 2" onclick="openPreview(this)">
+      </div>
+    </div>
+  </section>
+  
+  <div id="preview-lightbox" class="preview-lightbox" style="display: none;">
+    <span onclick="closePreview()" class="close">&times;</span>
+    <img id="preview-image" src="">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
